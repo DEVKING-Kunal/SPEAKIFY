@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    display: grid;
+ /* Center content */
+    height: 100vh; /* Full height */
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 15px;
+    /* background-color:#283440; */
+    position: absolute;
+    top: 5.5%;
+    left: 9%;
+    z-index: 1000; /* Keep it above other elements */
+}
+
+.bar1 {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+}
+.bar2 {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+}
+.bar3 {
+    display: block;
+    width: 10px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+}
+
+.sidebar {
+    width: 190px;
+    height: 100vh;
+    background-color:rgba(250, 142, 239, 0.547);
+    color: white;
+    position: fixed;
+    left: -250px; /* Start hidden */
+    transition: left 1s;
+    padding-top: 30%; /* Space for toggle button */
+}
+
+.sidebar.active {
+    left: 0; /* Show sidebar */
+}
+
+.menu {
+    padding: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li {
+    padding: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: rgb(243, 17, 243);
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: rgb(51, 83, 245);
+}
+
+.content {
+    color: white;
+    text-align: left; /* Center text */
+    margin-left: 14%;
+    margin-top: 2%;
+    z-index: 1; /* Ensure content is above sidebar */
+}
+.footer {
+    /* background-color: #283440; */
+    color: white;
+    text-align: center;/* Vertical padding */
+    bottom: 0%;
+}
+label {
+    display: inline-block;
+    padding: 0px 250px;
+    background-color: black;
+    color: aliceblue;
+    border: 3px solid #ccc;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+.label{
+    text-align: center;
+}
+.submit{
+    text-align: center;
+    display: inline-block;
+    padding: 0px 100px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px double #ccc;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#submitButton { 
+    display: none;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+.button{
+    display: grid;
+    place-items: center;
+}
+.footer1{
+    color: white;
+    bottom: 2%;
+    position: fixed ;
+    text-align: center;
+margin-left: 35%;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about{
+    text-align: center;
+}
+.contact_content{
+    text-align: center;
+    margin-top: 10%;
+}
+.about-content{
+    display: inline-block;
+    width: 50%;
+    border: 5px double white;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    border-radius: 50px;
+}
+.about-content{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+.audio-image{
+    opacity: 0;
+    animation: fadeIn 3.5s ease-in forwards;
+}
+.team-images{
+    text-align: center;
+}
+.image-description1{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description2{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description3{
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description4{
+    opacity: 0;
+    animation: fadeIn 4s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+a{
+    color: white;
+}
